@@ -97,7 +97,7 @@ and needs your help to build out a web-app prototype for their new product.
 
 ![Search Page](https://github.com/ocsfwarch/tap_giphy/blob/master/project_docs/search_page.png?raw=true)
 
-![Favorites Page](https://github.com/ocsfwarch/tap_giphy/blob/master/project_docs/favorite_page.png?raw=true)
+![Favorites Page](https://github.com/ocsfwarch/tap_giphy/blob/master/project_docs/favorites_page.png?raw=true)
 
 ## References
 
