@@ -1,0 +1,20 @@
+For this application, the main component is the image display.
+
+The component name will be `ImageDisplay`.
+The `ImageDisplay` component will consist of an image list (`ImageDisplayList`) 
+and an image item (`ImageDisplayListItem`) components.
+
+The image display component with be used by the `Search` and `Favorites` components.
+
+Mobile View:
+Images are displayed as columns.
+
+Tablet Display:
+Images are displayed as a 2x2 grid.
+
+Desktop Display 1:
+Images are displayed as a 3x3 grid.
+
+Desktop Display 2:
+Images are displayed as a 4x4 grid.
+

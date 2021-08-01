@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="search_container"
+>
+  <section
+    className="search_form_container"
+  >
+    <form
+      id="gif_search_form"
+      name="gif_search_form"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="search_gif"
+      >
+        <input
+          id="search_gif"
+          name="search_gif"
+          onChange={[Function]}
+          placeholder="Enter a search term"
+          required={true}
+          type="text"
+        />
+      </label>
+      <button
+        className="btn_green"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+  </section>
+  <div
+    className="image_display_container"
+  >
+    <section
+      className="image_list"
+    >
+      <ul
+        className="hide_list"
+      />
+    </section>
+  </div>
+</div>
+`;

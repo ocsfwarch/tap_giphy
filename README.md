@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# TapGiphy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The purpose of this project is to create a GIF search engine using `Giphy's public API`.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Stash has decided to pivot from investing to the GIF-search-engine space,
+and needs your help to build out a web-app prototype for their new product.
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. The app serves a page consisting of a simple form with a text field and a
+   button.
+2. When the user enters text, use Javascript to request some GIFs from the
+   Giphy API
+3. When the API responds, populate the page with GIFs.
+4. A user can click a GIF to add it to their "favorites".
+5. A user can view another page which displays their favorite GIFs.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Acceptance Criteria
 
-### `npm test`
+| Section             | Description                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------- |
+| Requirements-Review | This app does something interesting or useful.                                         |
+|                     | This app is responsive for mobile and desktop devices.                                 |
+|                     | The content on the app is clear and readable.                                          |
+|                     | The GitHub repository includes a comprehensive README                                  |
+|                     | The app includes a landing page that explains what the app does and how to get started |
+|                     | The app includes a Favicon.                                                            |
+|                     | The app works across different browsers                                                |
+| Code-Review         | The code follows consistent standards (use of indentation, semicolons, etc).           |
+|                     | There are no errors in the console when the app is running.                            |
+|                     | The code follows sound architectural patterns.                                         |
+|                     | The code has comments where appropriate.                                               |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Use Case 1 - Search for GIFs
 
-### `npm run build`
+- This use case starts when the user selects Search from the menu.
+- The system displays a GIF search form.
+- The system displays an empty results area.
+- The user enters search term(s) in the search input element.
+- The user selects the `Search` command button.
+- The system performs a fetch to the GIF search api.
+- The system displays the search results.
+- This use case ends when the system has displayed the search results.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Use Case 2 - Add to Favorites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- This use case starts when the user selects the `Add To Favorites` element.
+- The system identifies the selected GIF.
+- The system saves the selected GIF to the favorites list.
+- The system displays a status message to the user.
+- This use case ends when the status message is displayed to the user.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Use Case 3 - Display Favorites
 
-### `npm run eject`
+- This use case starts when the user selects `Favorites` from the menu.
+- The system checks for available favorites.
+- The system displays the available favorites to the user.
+- This use case ends when the available favorites are displayed to the user.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Use Case 4 - Remove from Favorites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- This use case starts when the user selects the `Remove From Favorites` element.
+- The system identifies the selected GIF.
+- The system removes the selected GIF to the favorites list.
+- The system displays a status message to the user.
+- The system displays an updated display of the available favorites.
+- This use case ends when the system has updated the favorites.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Areas of Interest
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Section   | Description                                                 |
+| --------- | ----------------------------------------------------------- |
+| Home      | This is the Landing Page and provides a brief introduction. |
+| Search    | This is where users are allowed to search for GIFs.         |
+| Favorites | This is where users can view their saved favorite GIFs.     |
 
-## Learn More
+## Design and Architecture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Component Layout Diagram
+  ![Component Layout](https://github.com/ocsfwarch/tap_giphy/blob/main/Project_Docs/component_layout.png?raw=true)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
 
-### Code Splitting
+1. Fork and clone this repository.
+2. Run `npm install` to install project dependencies.
+3. Run `npm start` to start the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Running tests
 
-### Analyzing the Bundle Size
+## References
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**[Giphy Docs](https://developers.giphy.com/docs/sdk)**
