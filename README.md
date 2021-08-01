@@ -89,6 +89,16 @@ and needs your help to build out a web-app prototype for their new product.
 
 ## Running tests
 
+- npm test
+
+## App Images
+
+![Landing Page](https://github.com/ocsfwarch/tap_giphy/blob/master/project_docs/landing_page.png?raw=true)
+
+![Search Page](https://github.com/ocsfwarch/tap_giphy/blob/master/project_docs/search_page.png?raw=true)
+
+![Favorites Page](https://github.com/ocsfwarch/tap_giphy/blob/master/project_docs/favorite_page.png?raw=true)
+
 ## References
 
 **[Giphy Docs](https://developers.giphy.com/docs/sdk)**
