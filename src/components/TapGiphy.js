@@ -31,7 +31,6 @@ function TapGiphy() {
   }, [status]);
 
   const addFavorite = (item) => {
-    console.log(`LEN = ${favorites.length}`);
     if (favorites.length < MAX_FAVORITES) {
       // Check if item already exists in the favorites
       let found = false;

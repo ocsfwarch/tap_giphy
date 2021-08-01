@@ -43,6 +43,18 @@ exports[`renders correctly 1`] = `
         Select "Favorites" from the menu to view GIFs that have been saved as favorites.
       </section>
     </section>
+    <section
+      className="footer"
+    >
+      <span>
+        Powered by 
+      </span>
+       
+      <img
+        alt="GIPHY"
+        src="GIPHY Logo 30px.png"
+      />
+    </section>
   </section>
 </div>
 `;
