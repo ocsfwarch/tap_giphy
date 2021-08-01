@@ -79,7 +79,7 @@ and needs your help to build out a web-app prototype for their new product.
 ## Design and Architecture
 
 - Component Layout Diagram
-  ![Component Layout](https://github.com/ocsfwarch/tap_giphy/blob/master/project_docs/component_layout.png)
+  ![Component Layout](https://github.com/ocsfwarch/tap_giphy/blob/master/project_docs/component_layout.png?raw=true)
 
 ## Installation
 
