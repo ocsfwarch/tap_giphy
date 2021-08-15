@@ -1,5 +1,6 @@
 {
   "name": "tap_giphy",
+  "homepage": "https://www.thetapsite.com/tap_giphy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

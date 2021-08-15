@@ -80,7 +80,7 @@ function TapGiphy() {
         <Status status={status} />
         <Switch>
           <Route
-            path="/Favorites"
+            path={`${process.env.PUBLIC_URL}/Favorites`}
             render={(props) => (
               <Favorites
                 {...props}
@@ -90,7 +90,7 @@ function TapGiphy() {
             )}
           />
           <Route
-            path="/Search"
+            path={`${process.env.PUBLIC_URL}/Search`}
             render={(props) => (
               <Search
                 {...props}
@@ -100,7 +100,7 @@ function TapGiphy() {
               />
             )}
           />
-          <Route path="/" component={Main} />
+          <Route path={`${process.env.PUBLIC_URL}/`} component={Main} />
         </Switch>
       </div>
     </Router>
