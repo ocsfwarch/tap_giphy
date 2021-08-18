@@ -79,28 +79,19 @@ function TapGiphy() {
         <Header />
         <Status status={status} />
         <Switch>
-          <Route
-            path={`${process.env.PUBLIC_URL}/Favorites`}
-            render={(props) => (
-              <Favorites
-                {...props}
-                favorites={favorites}
-                action={removeFavorite}
-              />
-            )}
-          />
-          <Route
-            path={`${process.env.PUBLIC_URL}/Search`}
-            render={(props) => (
-              <Search
-                {...props}
-                term={searchTerm}
-                updateSearchTerm={updateSearchTerm}
-                action={addFavorite}
-              />
-            )}
-          />
-          <Route path={`${process.env.PUBLIC_URL}/`} component={Main} />
+          <Route path={`${process.env.PUBLIC_URL}/Favorites`}>
+            <Favorites favorites={favorites} action={removeFavorite} />
+          </Route>
+          <Route path={`${process.env.PUBLIC_URL}/Search`}>
+            <Search
+              term={searchTerm}
+              updateSearchTerm={updateSearchTerm}
+              action={addFavorite}
+            />
+          </Route>
+          <Route path={`${process.env.PUBLIC_URL}/`}>
+            <Main />
+          </Route>
         </Switch>
       </div>
     </Router>
