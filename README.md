@@ -4,8 +4,7 @@ The purpose of this project is to create a GIF search engine using `Giphy's publ
 
 ## Description
 
-Stash has decided to pivot from investing to the GIF-search-engine space,
-and needs your help to build out a web-app prototype for their new product.
+The corporation has decided to pivot from investing to the GIF-search-engine space, and needs some software development help to build out a web-app prototype for their new product.
 
 ## Requirements
 
